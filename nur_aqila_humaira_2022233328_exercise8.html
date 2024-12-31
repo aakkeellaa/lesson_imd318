@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JAVASCRIPTS EXERCISE</title>
+</head>
+<body>
+
+	<h2>Question 1</h2>
+	<p id="content1">Welcome to my page</p>
+	<button type="button" onclick='document.getElementById("content1").innerHTML="I love to learn web design"'>Click Here</button>
+
+	<h2>Question 2</h2>
+	<p id="style1">Hello! Welcome to Faculty of Information Management</p>
+	<script>
+		function myStyle()
+		{
+			document.getElementById("style1").style.fontSize = "25px";
+			document.getElementById("style1").style.fontFamily = "Courier New";
+			document.getElementById("style1").style.color = "blue";
+			document.getElementById("style1").style.backgroundColor = "yellow";
+		}
+	</script>
+	<button type="button" onclick="myStyle()">Change Style</button>
+
+	<h2>Question 3</h2>
+
+	<script>
+		function myPicture(a)
+		{
+			var pic;
+			if (a==0)
+			{
+				pic="images/fatcat.jpg"
+			}
+			else
+			{
+				pic="images/cat.jpg"
+			}
+			document.getElementById('picture').src=pic;
+		}
+	</script>
+
+	<img src="images/fatcat.jpg" id="picture" height="100" width="100">
+	<p>
+		<button type="button" onclick="myPicture(0)">cat</button>
+		<button type="button" onclick="myPicture(1)">kitty</button>
+	</p>
+
+	<h2>Question 4</h2>
+
+	<button type="button" onclick="AlertBox()">Click here</button>
+	<script>
+		function AlertBox()
+		{
+			alert("Assalamualaikum.\nSelamat datang ke kelas IMS456 \nSemoga kita beroleh ilmu bermanfaat")
+		}
+	</script>
+
+	<h2>Question 5</h2>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7967.530022657314!2d101.70886319118988!3d3.156548137275288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d12d669c1f%3A0xc955b08cfc1aae29!2sSuria%20KLCC!5e0!3m2!1sen!2smy!4v1734505077587!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+</body>
+</html>
